@@ -2,6 +2,7 @@
     "core": {
       "metrics": {
         "instance": "test_$HUBNAME",
+        "comment": "docker instance build by NL-TCH",
         "push": ""
       }
     },
