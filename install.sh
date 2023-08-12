@@ -196,17 +196,28 @@ write_config_file() {
 {
 "core": {
     "metrics": {
-    "instance": "$HOSTNAME",
-    "comment": "$METRICS_COMMENT",
+    "instance": "$name",
+    "comment": "$metrics_comment",
     "push": "$PUSHMETRICS"
     }
 },
 "spn": {
     "publicHub": {
-    "name": "$HOSTNAME"
+    "name": "$name of $LOGNAME",
+    "group": "$group",
+    "contactAddress": "$contactAddress",
+    "contactService": "$contactService",
+    "hosters: "$hosters",
+    "datacenter": "$datacenter",
+    "ip4": "$ip4",
+    "ip6": "$ip6",
+    "transports": "$transports",
+    "entry": "$entry",
+    "exit": "$exit"
     }
 }
 }
+
 EOT
     else
     cat "$LOCAL_CONFIG_FILE"
