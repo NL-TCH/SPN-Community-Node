@@ -196,24 +196,24 @@ write_config_file() {
 {
 "core": {
     "metrics": {
-    "instance": "$name",
+    "instance": "$HOSTNAME",
     "comment": "$METRICS_COMMENT",
     "push": "$PUSHMETRICS"
     }
 },
 "spn": {
     "publicHub": {
-    "name": "$name of $LOGNAME",
-    "group": "$group",
-    "contactAddress": "$contactAddress",
-    "contactService": "$contactService",
-    "hosters: "$hosters",
-    "datacenter": "$datacenter",
-    "ip4": "$ip4",
-    "ip6": "$ip6",
-    "transports": "$transports",
-    "entry": "$entry",
-    "exit": "$exit"
+    "name": "$NAME",
+    "group": "$GROUP",
+    "contactAddress": "$CONTACTADDRESS",
+    "contactService": "$CONTACTSERVICE",
+    "hosters: "$HOSTERS",
+    "datacenter": "$DATACENTER",
+    "ip4": "$IP4",
+    "ip6": "$IP6",
+    "transports": "$TRANSPORTS",
+    "entry": "$ENTRY",
+    "exit": "$EXIT"
     }
 }
 }

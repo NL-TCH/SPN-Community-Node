@@ -7,15 +7,15 @@ services:
       - 80
       - 17
     environment:
-      - name=value            # REQUIRED Set the name of the node.
-    #  - group=value           # OPTIONAL Person or organisation, who is in control of the node (should be same for all nodes of this person or organisation).
-    #  - contactAddress=value  # OPTIONAL Contact possibility (recommended, but optional).
-    #  - contactService=value  # OPTIONAL Type of service of the contact address, if not email.
-      - hosters=Community     # REQUIRED Hosters - supply chain (reseller, hosting provider, datacenter operator, …).
-    #  - datacenter=value      # OPTIONAL Datacenter in the format of COUNTRYCODE-COMPANY-INTERNALCODE (eg: DE-Hetzner-FSN1-DC5)
-      - ip4=value             # REQUIRED IPv4 address must be global and accessible.
-    #  - ip6=value             # OPTIONAL IPv6 address must be global and accessible.
-    #  - transports=value      # OPTIONAL Define available protocols for communicating with other nodes and clients. Leave undefined to use defaults.
-    #  - entry=value           # OPTIONAL Set an entry policy (for clients) with the same syntax as rules.
-    #  - exit=value            # OPTIONAL Set an exit policy (for destinations) with the same syntax as rules. The default is to block TCP/25 (SMTP) traffic.
-    #  - METRICS_COMMENT       # OPTIONAL Set an comment for the metricscollection?!
+      - NAME=value            # REQUIRED Set the name of the node.
+    #  - GROUP=value           # OPTIONAL Person or organisation, who is in control of the node (should be same for all nodes of this person or organisation).
+    #  - CONTACTADDRESS=value  # OPTIONAL Contact possibility (recommended, but optional).
+    #  - CONTACTSERVICE=value  # OPTIONAL Type of service of the contact address, if not email.
+      - HOSTERS=Community     # REQUIRED Hosters - supply chain (reseller, hosting provider, datacenter operator, …).
+    #  - DATACENTER=value      # OPTIONAL Datacenter in the format of COUNTRYCODE-COMPANY-INTERNALCODE (eg: DE-Hetzner-FSN1-DC5)
+      - IP4=value             # REQUIRED IPv4 address must be global and accessible.
+    #  - IP6=value             # OPTIONAL IPv6 address must be global and accessible.
+    #  - TRANSPORTS=value      # OPTIONAL Define available protocols for communicating with other nodes and clients. Leave undefined to use defaults.
+    #  - ENTRY=value           # OPTIONAL Set an entry policy (for clients) with the same syntax as rules.
+    #  - EXIT=value            # OPTIONAL Set an exit policy (for destinations) with the same syntax as rules. The default is to block TCP/25 (SMTP) traffic.
+    #  - METRICS_COMMENT=value # OPTIONAL Set an comment for the metricscollection?!
