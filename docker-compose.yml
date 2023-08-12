@@ -18,4 +18,4 @@ services:
     #  - transports=value      # OPTIONAL Define available protocols for communicating with other nodes and clients. Leave undefined to use defaults.
     #  - entry=value           # OPTIONAL Set an entry policy (for clients) with the same syntax as rules.
     #  - exit=value            # OPTIONAL Set an exit policy (for destinations) with the same syntax as rules. The default is to block TCP/25 (SMTP) traffic.
-    #  - metrics_comment       # OPTIONAL Set an comment for the metricscollection?!
+    #  - METRICS_COMMENT       # OPTIONAL Set an comment for the metricscollection?!

@@ -197,7 +197,7 @@ write_config_file() {
 "core": {
     "metrics": {
     "instance": "$name",
-    "comment": "$metrics_comment",
+    "comment": "$METRICS_COMMENT",
     "push": "$PUSHMETRICS"
     }
 },
