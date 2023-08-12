@@ -1,0 +1,14 @@
+{
+    "core": {
+      "metrics": {
+        "instance": "test_$HUBNAME",
+        "push": ""
+      }
+    },
+    "spn": {
+      "publicHub": {
+        "name": "test-$HUBNAME",
+        "ip4": "123.12.1.123"
+      }
+    }
+  }
