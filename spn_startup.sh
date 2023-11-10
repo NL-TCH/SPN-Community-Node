@@ -1,0 +1,1 @@
+/opt/safing/spn/portmaster-start --data /opt/safing/spn hub

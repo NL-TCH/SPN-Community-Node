@@ -1,15 +1,16 @@
 FROM ubuntu:22.04
 
-RUN apt update
-RUN apt install wget -y
-RUN wget https://raw.githubusercontent.com/safing/spn/master/tools/install.sh
+ENV SCRIPT_INSTALLED=false
 
-COPY ./config.json /opt/safing/spn/config.json
+COPY init.sh /data/
+COPY spn_installer.sh /data/
+COPY spn_startup.sh /data/
+COPY config.json /data/
 
-RUN chmod +x install.sh
-RUN yes | ./install.sh -S -y -n
+RUN chmod -R +x /data*
 
 EXPOSE 17
 EXPOSE 80
 
-CMD ["/opt/safing/spn/portmaster-start", "--data", "/opt/safing/spn", "hub"]
+#CMD ["/opt/safing/spn/portmaster-start", "--data", "/opt/safing/spn", "hub"]
+CMD ["/data/init.sh"]
