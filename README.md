@@ -1,4 +1,4 @@
-run: docker run -v ./config.json:/data/config.json image:latest
+run: docker run -v ./config.json:/data/config.json dockerteun/spn-community-node:latest
 
 problem solved:
 install spn when not installed, run when installed (after restarting) to prevent reinstalling after container reboot
