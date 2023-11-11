@@ -1,14 +1,14 @@
 {
     "core": {
       "metrics": {
-        "instance": "justsomeinstance",
+        "instance": "justsomeinstance2",
         "comment": "docker instance build by NL-TCH",
         "push": ""
       }
     },
     "spn": {
       "publicHub": {
-        "name": "justsomehub",
+        "name": "justsomehub2",
         "ip4": "123.12.1.123"
       }
     }
