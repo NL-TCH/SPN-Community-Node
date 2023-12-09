@@ -1,14 +1,31 @@
-run: docker run -v ./config.json:/data/config.json dockerteun/spn-community-node:latest
+# SPN Community Node via Docker
 
-problem solved:
-install spn when not installed, run when installed (after restarting) to prevent reinstalling after container reboot
-provide config after building image, and not while, to create global usable image.
+The configuration of the docker image has to be supplied via a config.json file.
+Example configuration:
+```json
+{
+    "core": {
+      "metrics": {
+        "instance": "justsomeinstance",
+        "comment": "docker instance build by NL-TCH",
+        "push": ""
+      }
+    },
+    "spn": {
+      "publicHub": {
+        "name": "justsomehub",
+        "ip4": "123.12.1.123"
+      }
+    }
+  }
+```
+
+For all configuration flags check https://docs.safing.io/spn/hosting-a-community-node#appendix-i-available-settings-for-spn-nodes
+
+To run the docker container execute the following command:`docker run -v ./config.json:/data/config.json dockerteun/spn-community-node:latest`
 
 
-https://docs.safing.io/spn/hosting-a-community-node
-
-SPN docker container script usage:
-
+Global overview docker container:
 
 ```mermaid
 graph LR;
