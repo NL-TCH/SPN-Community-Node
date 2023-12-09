@@ -6,14 +6,15 @@ Example configuration:
 {
     "core": {
       "metrics": {
-        "instance": "justsomeinstance",
+        "instance": "justsomeinstance2",
         "comment": "docker instance build by NL-TCH",
         "push": ""
       }
     },
     "spn": {
       "publicHub": {
-        "name": "justsomehub",
+        "name": "justsomehub2",
+        "transports": ["http:80", "http:8080", "tcp:17"],
         "ip4": "123.12.1.123"
       }
     }

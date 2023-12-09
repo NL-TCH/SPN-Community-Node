@@ -10,5 +10,9 @@ RUN chmod -R +x /data*
 
 EXPOSE 17
 EXPOSE 80
+EXPOSE 8080
+EXPOSE 17027
+EXPOSE 17080
+
 
 CMD ["/data/init.sh"]
